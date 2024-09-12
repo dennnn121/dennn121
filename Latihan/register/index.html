@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <label for="first-name">Nama Depan:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Nama Belakang:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Pria</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Wanita</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Lainnya</label>
+
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" placeholder="Jalan" required>
+                <input type="text" id="city" name="city" placeholder="Kota" required>
+                <input type="text" id="state" name="state" placeholder="Provinsi" required>
+                <input type="text" id="postal-code" name="postal-code" placeholder="Kode Pos" required>
+                <input type="text" id="country" name="country" placeholder="Negara" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Kontak</legend>
+                <label for="email">Alamat Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+62" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Akun</legend>
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Konfirmasi Kata Sandi:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Lain</legend>
+                <label>Apakah Anda ingin menerima berita terbaru melalui email?</label>
+                <input type="radio" id="newsletter-yes" name="newsletter" value="yes">
+                <label for="newsletter-yes">Ya</label>
+                <input type="radio" id="newsletter-no" name="newsletter" value="no">
+                <label for="newsletter-no">Tidak</label>
+
+                <label for="contact-method">Metode Kontak Favorit:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="email">Email</option>
+                    <option value="phone">Telepon</option>
+                    <option value="sms">SMS</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pertanyaan Keamanan</legend>
+                <label for="security-question">Pertanyaan Keamanan:</label>
+                <select id="security-question" name="security-question">
+                    <option value="pet">Nama hewan peliharaan pertama Anda?</option>
+                    <option value="mother-maiden">Nama gadis ibu Anda?</option>
+                    <option value="birth-city">Kota tempat Anda dilahirkan?</option>
+                </select>
+
+                <label for="security-answer">Jawaban:</label>
+                <input type="text" id="security-answer" name="security-answer" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Persetujuan dan Pendaftaran</legend>
+                <label for="privacy-policy">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                    Saya telah membaca dan menyetujui <a href="#">Kebijakan Privasi</a> dan <a href="#">Syarat & Ketentuan</a>.
+                </label>
+
+                <label for="captcha">
+                    <input type="checkbox" id="captcha" name="captcha" required>
+                    Saya bukan robot
+                </label>
+            </fieldset>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+</body>
+</html>
